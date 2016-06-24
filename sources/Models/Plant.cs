@@ -11,7 +11,7 @@ namespace telcodatagen.Models
         private static string[] SensorNameList = { "LBA:AI:OFDS.CDWPI10108.PV", "LBA:AI:OFDS.CDWPI10104A.PV", "LBA:AI:OFDS.CDWPI10104B.PV", "LBA:AI:OFDS.CDWHIC10101.PV", "LBA:AI:OFDS.CDWUI10103.PV", "LBA:AI:OFDS.CDWXV10101.PV" };
         public List<Sensor> SensorsList { get; set; }
 
-        public Plant(string deviceId)
+        public Plant()
         {
             DateTime dt = DateTime.Now;
             SensorsList = new List<Sensor>();
@@ -20,7 +20,6 @@ namespace telcodatagen.Models
                 SensorsList.Add(new Sensor()
                 {
                     SensorName = SensorNameList[i],
-                    deviceId = deviceId,
                     PollTime = dt,
                     FrequencyVal = 0,
                     HeatVal = 0,

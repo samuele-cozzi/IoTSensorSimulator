@@ -160,6 +160,8 @@
     <Compile Include="pollrecord.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\IoTHub.cs" />
+    <Compile Include="Services\ServiceBus.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
