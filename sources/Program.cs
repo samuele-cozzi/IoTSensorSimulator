@@ -65,7 +65,7 @@ namespace sensordatagen
                     Console.Error.WriteLine(JsonConvert.SerializeObject(sensor));
                 }
                 
-                System.Threading.Thread.Sleep(60000);
+                System.Threading.Thread.Sleep(2000);
                 Console.Error.WriteLine(" ");
             }
            

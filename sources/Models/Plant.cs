@@ -20,13 +20,12 @@ namespace telcodatagen.Models
                 SensorsList.Add(new Sensor()
                 {
                     SensorName = SensorNameList[i],
-                    PollTime = dt,
-                    FrequencyVal = 0,
-                    HeatVal = 0,
-                    PowerVal = 0,
-                    AlertCountLast10 = 0,
-                    IsBroken = false
+                    FrequencyVal = 0.5,
+                    HeatVal = 0.5,
+                    PowerVal = 0.5
                 });
+
+                
             }
         }
 
